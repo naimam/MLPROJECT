@@ -12,9 +12,9 @@ missing_data = [missingdata1, missingdata2, missingdata3]
 # KNN Imputation
 def KNNImpute(data, k):
     result = data.copy() # copy the data
-    indexes_nan = np.argwhere(np.isnan(data)) # find the indexes of the missing values
+    missing_indexs = np.argwhere(np.isnan(data)) # find the indexes of the missing values
     dist_matrix = nan_euclidean_distances(data) # calculate the distance matrix for the data
-    for index in indexes_nan: # iterate over the indexes of the missing values
+    for index in missing_indexs: # iterate over the indexes of the missing values
         row = index[0] 
         col = index[1] 
         sorted_rows = dist_matrix[row].argsort() # sorts the distance matrix for the row
