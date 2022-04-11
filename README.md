@@ -1,5 +1,24 @@
 # MLPROJECT
 
+## HOW TO RUN THE CODE
+
+1. Classification.py
+
+2. MissingValueEstimation.py:
+   - Prerequisites: 
+     -  Libraries to install:
+          - pip install pandas
+          - pip install numpy
+          - pip install scikit-learn 
+      - or if using anaconda:
+          - conda install pandas
+          - conda install numpy
+          - conda install -c anaconda scikit-learn
+    - On lines 7,8,9, change the path from 'input/MissingData1.txt' to the path of the MissingData files.
+    - On line 37, you can change the path from 'MissingData1.txt' to a folder. e.g: 'results/MohamedMissingR...'
+    - Then simply run the python file.
+
+---
 ## C1. Classification
 
 We implemented 2 algorithms learned in class which are Ann and decision tree, and we had better result with our decision tree from scratch implementation. While our Ann with SKlearn performed much better than  any other algorithm we mentioned here, so all are output files come from this algorithm.

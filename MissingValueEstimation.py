@@ -34,5 +34,5 @@ if __name__ == "__main__":
         k = int(np.sqrt(missing_data[i].shape[0]))  # k = square root of the number of rows
         output = KNNImpute(missing_data[i].values, k)
         output = pd.DataFrame(output)
-        output.to_csv('output/MohamedMissingResult'+str(i+1)+'.txt', sep='\t', index=False, header=False)
+        output.to_csv('MohamedMissingResult'+str(i+1)+'.txt', sep='\t', index=False, header=False)
 
