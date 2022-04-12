@@ -11,9 +11,9 @@ from sklearn.utils import shuffle
 from collections import Counter
 
 # read data
-data =  pd.read_csv('/kaggle/input/test-data-1/TrainData1.txt', delimiter = "\t", header=None)
-label_data = pd.read_csv('/kaggle/input/test-data-1/TrainLabel1.txt', header=None)
-test_data = pd.read_csv('/kaggle/input/test-data-1/TrainLabel1.txt', header=None)
+data =  pd.read_csv('input/TrainData1.txt', delimiter = "\t", header=None)
+label_data = pd.read_csv('input/TrainLabel1.txt', header=None)
+test_data = pd.read_csv('input/TestData1.txt', header=None)
 data = np.array(data)
 label_data.value_counts()
 label_data = np.array(label_data)
