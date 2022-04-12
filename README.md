@@ -3,6 +3,29 @@
 ## HOW TO RUN THE CODE
 
 1. Classification.py
+      - Prerequisites: 
+         -  Libraries to install:
+          - pip install pandas
+          - pip install numpy
+          - pip install scikit-learn 
+          - pip install -U imbalanced-learn
+      - or if using anaconda:
+           - conda install pandas
+           - conda install numpy
+           - conda install -c anaconda scikit-learn
+           - conda install -c conda-forge imbalanced-learn
+           
+      1b. ANNFromScratch.py:
+      
+               - pip install pandas
+               - pip install numpy
+               - pip install scikit-learn 
+               - pip install -U imbalanced-learn
+               - python -m pip install -U matplotlib
+     
+     You will need to edit lines 16 to 34 in Classification.py with the respective the path of the files in your system or environment in order to run the file.
+     
+     You will also need to edit lines 14 to 16 in ANNFromScracth.py file with the respective path of the files in your system or environment to run the file without issue.
 
 2. MissingValueEstimation.py:
    - Prerequisites: 
@@ -42,7 +65,7 @@ Decision Tree: cross validation, overfitting, knn for missing values, feature se
 
 <h4>Results:</h4>
 
-* Ann from Scratch: 50% ~ 555% testing accuracy and 60% ~ 70% training accuracy
+* Ann from Scratch: 50% ~ 55% testing accuracy and 60% ~ 70% training accuracy
 * Decision Tree from Scratch: 84% ~ 86% testing accruacy and 100% training accuracy
 * Ann with SKLearn: ~98% testing accuracy and 100% training accuracy
 * Decision tree with SkLearn: 98% testing accuracy and 100% training accuracy
